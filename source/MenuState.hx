@@ -26,9 +26,9 @@ class MenuState extends FlxState
 		telon.makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(telon);
 		FlxTween.tween(telon, {y:FlxG.height}, 3, {onComplete: function(_)
-																{
-																	titleTxt.visible = howToTxt.visible = true;																	
-																}
+		{
+			titleTxt.visible = howToTxt.visible = true;																	
+		}
 		}).start;
 
 		titleTxt = new FlxText(95,140,FlxG.width-190,"Santa's\nsuper-candy-happy\ntoy factory\n#237",28);
